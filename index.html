@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gustavo Rocha Stamm - Arrow Functions in ES6</title>
+    <style>
+        html{
+            background-image: url("./images/background.jpg");
+            background-size: cover;
+            background-repeat: repeat-y;
+        }
+        .container{
+            background-color: white;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 60%;
+            margin-top: 50px;
+            border: 3px solid black;
+            padding: 20px;
+        }
+        #title{
+            text-align: center;
+        }
+        h3{
+            margin-top: 60px;
+            text-align: right;
+        }
+        h2{
+            text-align: justify;;
+        }
+        #firstp{
+            margin-top: 50px;
+            text-indent: 40px;
+        }
+        #secondp{
+            text-indent: 40px;
+        }
+        #img1{
+            margin-top: 10px;
+            margin-left: 120px;
+            
+        }
+        #img1leg{
+            margin-left: 120px;
+            margin-top: -3px;
+            margin-bottom: 30px;
+        }
+        #img2, #img3, #img4, #img5{
+            margin-top: 10px;
+            margin-left: 320px;
+        }
+        #img2leg, #img3leg, #img4leg, #img5leg{
+            margin-left: 320px;
+            margin-top: -3px;
+            margin-bottom: 30px;
+        }
+        #img6, #img7{
+            margin-top: 10px;
+            margin-left: 60px;
+        }
+        #img6leg, #img7leg{
+            margin-left: 60px;
+            margin-top: -3px;
+            margin-bottom: 30px;
+        }
+        #references{
+            margin-top: 80px;
+        }
+        #conclusion{
+            text-indent: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Arrow Functions in ES6</h1>
+        <h3>Written by Gustavo Rocha Stamm</h3>
+        <h2 id="firstp">In the programming world, the functions are very useful, making the programmer`s lives easier and simpler. With the arrival of ES6, it is possible to code functions
+            in different ways. One possibility is using arrow functions. Although it looks like difficult in the first look, arrow functions can make the code shorter. 
+            Let`s take a look how it works.
+        </h2>
+        <h2 id="secondp">
+            First of all, we need to understand what is a function. A function is a block of code that is designed to perform a specific task. To use the function, it is 
+            necessary to call it (when something invokes it). In JavaScript, a function will always return a value. However, if no value is specified to be returned, the 
+            function will return undefined. Besides, it is possible to use parameters in a function. We can pass values to a specific function and this values will be used 
+            within the function. Below it is possible to visualize one function, which receives two parameters, p1 and p2:
+        </h2>
+        <img src="./images/img1.jpg" id="img1">
+        <h4 id="img1leg">Figure 1 - Example of a function with two parameters</h4>
+        <h2>
+                As was said above, to use this function we need to call it in our code, otherwise it will have no utility. So, we just need to invoke the function and pass these two 
+                parameters and the function will return the multiplication of the two values.
+        </h2>
+        <h2>
+                In 2015, ES6 was published, bringing with it the arrow functions. 	The syntax is different and it looks more complex, but after understood, it is not a big deal. As the normal 
+                functions, we can pass parameters or not, and depending how many parameters we are using, the syntax changes too. So, let`s start with the most simple example, no parameters. 
+                To make it easier, we will compare a normal JavaScript function with an arrow function:
+        </h2>
+        <img src="./images/img2.jpg" id="img2">
+        <h4 id="img2leg">Figure 2 – Arrow function with no parameter</h4>
+        <h2>
+                The arrow function does not use the “function” syntax in the beginning to determine that this is a function. Between the parentheses is empty because we do not have parameters and
+                 we add a arrow “=>” to show where de function starts. The next example will show an arrow function with one parameter:
+        </h2>
+        <img src="./images/img3.jpg" id="img3">
+        <h4 id="img3leg">Figure 3 - Arrow function with one parameter</h4>
+        <h2>
+                When we have just one parameter, we do not need to put parentheses. However, if we have two or more parameters, we need to use the parentheses, as it is shown below:
+        </h2>
+        <img src="./images/img4.jpg" id="img4">
+        <h4 id="img4leg">Figure 4- Arrow function with two parameters</h4>
+
+        <h2>
+            As we can see, the syntax changed. In all the cases we did not use the word “return” because there was just one statement. If you want to use to word
+             “return” you must use curly braces, like the example below:
+        </h2>
+        <img src="./images/img5.jpg" id="img5">
+        <h4 id="img5leg">Figure 5- Example of arrow function with "return" syntax</h4>
+        <h2>
+            One other important point is the use of “this” in regular functions and arrow functions. For regular functions, the key “this” represents the object that calls the function. 
+            However, for arrow function, “this” will always represent the object that defined the arrow function.
+        </h2>
+        <img src="./images/img6.jpg" id="img6">
+        <h4 id="img6leg">Figure 6 - Example of this in a regular function</h4>
+        <h2>
+            In this case, the first listener will return the window and the second one will return the button. However, for example below, both listeners will return the window, 
+            because the window is the owner of the function.
+        </h2>
+        <img src="./images/img7.jpg" id="img7">
+        <h4 id="img7leg">Figure 7- Example of this in an arrow function</h4>
+        <h2 id="conclusion">
+            Arrow functions are very useful and although it looks like more difficult, when you get use with it, you will realize that it is better. The ES6 brought other features 
+            that are as important as Arrow Functions and must be studied as well. However, all this content is going to stay for another article. 
+        </h2>
+
+        <h2 id="references">References</h2>
+        <a href="https://www.w3schools.com/js/js_arrow_function.asp"><h2>https://www.w3schools.com/js/js_arrow_function.asp</h2></a>
+        <a href="https://www.w3schools.com/js/js_functions.asp"><h2>https://www.w3schools.com/js/js_functions.asp</h2></a>
+        <a href="https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99"><h2>https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99</h2></a>
+    </div>
+</body>
+</html>
